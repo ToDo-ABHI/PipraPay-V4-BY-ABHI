@@ -36,23 +36,7 @@ This repository contains the PipraPay application files and the Bangla QR paymen
 
 The real `pp-config.php` file is intentionally excluded from Git. Use `pp-config.example.php` only as a template. Never commit real database passwords, API keys, SMTP credentials, private keys, or payment-provider secrets.
 
-## GitHub upload (browser method)
 
-1. Sign in at [GitHub](https://github.com/).
-2. Click **New repository**.
-3. Enter a repository name, choose **Private** or **Public**, and create it. Do not initialize it with a README because this folder already contains one.
-4. On the new repository page, choose **Add file → Upload files**.
-5. Extract this ZIP on your computer, open the extracted project folder, and drag its contents (not the outer folder) into the upload area.
-6. Wait for the upload to finish, enter a commit message such as `Initial clean project upload`, and click **Commit changes**.
-
-For a large project, GitHub Desktop or Git command line is more reliable than browser upload. See [GitHub's upload documentation](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
-
-## Security notes
-
-- Keep the repository private if the source is not intended for public distribution.
-- Never commit `pp-config.php`, `.env`, database dumps, backup archives, runtime uploads, or logs.
-- The supplied archive contained a database password in its local config file. That file has been removed from this clean package. **Change/rotate that database password on your hosting panel before continuing to use the database**, because it was present in the original archive.
-- If a secret was ever committed to GitHub, deleting the file in a later commit is not enough; rotate the secret and clean the repository history.
 
 ## License
 

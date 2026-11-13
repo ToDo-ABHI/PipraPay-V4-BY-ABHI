@@ -1,0 +1,28 @@
+# Local/server configuration and secrets
+pp-config.php
+pp-temp-config.php
+.env
+.env.*
+!.env.example
+
+# Runtime data, uploads, backups, and generated updates
+pp-media/storage/**
+!pp-media/storage/.gitkeep
+!pp-media/storage/index.php
+!pp-media/storage/.htaccess
+
+# Logs, database dumps, backups, and editor/OS files
+*.log
+error_log
+*.sql
+!pp-content/pp-install/db.sql
+*.zip
+*.bak
+*.old
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Common tooling
+.idea/
+.vscode/
